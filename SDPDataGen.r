@@ -1,4 +1,4 @@
-sdp_data_gen <- function(ind_sample_grep, sample_ordering, otu.good.norm_in, otu.good.taxonomy_in) {
+SDPDataGen <- function(ind_sample_grep, sample_ordering, otu.good.norm_in, otu.good.taxonomy_in) {
   ordering <- 50
   incr <- 0
   stacked_data <- matrix(nrow = (50 * length(ind_sample_grep)), ncol = 2)

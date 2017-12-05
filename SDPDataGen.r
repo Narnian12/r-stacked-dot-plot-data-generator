@@ -1,3 +1,11 @@
+# REQUIRES: These following variables -
+  # ind_sample_grep that contains all the individual sample indices in a predetermined order (days, ID, etc.)
+  # sample_ordering that contains the combined OTU ordering of all the individual samples (eg if there were three individual samples feces_b2_d0, feces_l_d0, and feces_k_d0, then the sample_ordering <- feces_d0.order)
+  # otu.good.norm_in which is otu.good.norm
+  # otu.good.taxonomy_in which is otu.good.taxonomy
+# MODIFIES: None
+# EFFECTS: Returns stacked_data which is a 2-D matrix with the first column containing the most-to-least abundant OTUs (up to the 50th most abundant)
+  # and the second column containing the % relative abundances
 SDPDataGen <- function(ind_sample_grep, sample_ordering, otu.good.norm_in, otu.good.taxonomy_in) {
   ordering <- 50
   incr <- 0

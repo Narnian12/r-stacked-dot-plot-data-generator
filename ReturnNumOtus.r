@@ -1,3 +1,4 @@
+
 ReturnNumOtus <- function(otuVec) {
   numOtus <- 0
   for (k_in in 1:length(otuVec)) {

@@ -1,5 +1,5 @@
 # REQUIRES: These following variables -
-  # ind_sample_grep that contains all the individual sample indices in a predetermined order (days, ID, etc.)
+  # ind_sample_grep that contains all the individual sample indices in a predetermined order (days, ID, etc.); ie it is a numeric vector
   # sample_ordering that contains the combined OTU ordering of all the individual samples (eg if there were three individual samples feces_b2_d0, feces_l_d0, and feces_k_d0, then the sample_ordering <- feces_d0.order)
   # otu.good.norm_in which is otu.good.norm
   # otu.good.taxonomy_in which is otu.good.taxonomy

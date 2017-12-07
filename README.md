@@ -26,5 +26,5 @@ cecum_d0 <- grep("Cecum_D0_", rownames(otu.good.norm))
 cecum_d0 <- grep("Cecum_D0", rownames(otu.good.norm))
 cecum_d0.order <- names(sort(otu.good.norm[cecum_d0, ], decreasing = T))
 
-cecum_d0_ggplot <- SDPDataGen(cecum_d0, cecum_d0.order, otu.good.norm, otu.good.taxonomy)
+cecum_d0_ggdata <- SDPDataGen(cecum_d0, cecum_d0.order, otu.good.norm, otu.good.taxonomy)
 ```

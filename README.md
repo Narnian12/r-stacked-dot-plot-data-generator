@@ -13,7 +13,7 @@ SDPDataGen(ind_sample_grep, sample_ordering, otu.good.norm_in, otu.good.taxonomy
 
 The R code will have an RME for more specific information on variable specifications, but we will go through an example to clarify the function usage.
 
-### Preliminary Variables
+### Example
 ```r
 # Assume it contains Cecum_D0_1, Cecum_D0_2 and Cecum_D0_3
 otu.good.norm

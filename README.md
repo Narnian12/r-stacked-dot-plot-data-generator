@@ -5,7 +5,7 @@ All of the code here requires that your data goes through the MiSeq SOP pipeline
 
 # Generating Stacked Dot Plots for Organs by Day
 
-## SDPDataGen Function
+## SDPDataGen() Function
 
 ```r
 SDPDataGen(ind_sample_grep, sample_ordering, otu.good.norm_in, otu.good.taxonomy_in)
@@ -26,5 +26,29 @@ cecum_d0 <- grep("Cecum_D0_", rownames(otu.good.norm))
 cecum_d0 <- grep("Cecum_D0", rownames(otu.good.norm))
 cecum_d0.order <- names(sort(otu.good.norm[cecum_d0, ], decreasing = T))
 
+# The variable that holds the result from SDPDataGen()
 cecum_d0_ggdata <- SDPDataGen(cecum_d0, cecum_d0.order, otu.good.norm, otu.good.taxonomy)
 ```
+
+## GGPlotGen() Function
+
+```r
+GGPlotGen(stacked_data_in, ggtitle_in)
+```
+
+This function should be used *immediately* after finishing the **SDPDataGen()** function
+
+### Example
+
+```r
+cecum_d0_ggplot <- GGPlotGen(cecum_d0_ggdata, "Stacked Dot Plot of Cecum Day 0 Rank Abundances")
+```
+
+# Generating Stacked Dot Plots of Number of Otus per Sample per Day
+
+## GenerateNumOtus() Function
+
+```r
+GenerateNumOtus(sample_vec, sample_order_vec, day_vec_in, samples_per_day_vec_in, otu.good.norm_in)
+```
+

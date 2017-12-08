@@ -44,6 +44,7 @@ This function should be used *immediately* after finishing the **SDPDataGen()** 
 
 ```r
 cecum_d0_ggplot <- GGPlotGen(cecum_d0_ggdata, "Stacked Dot Plot of Cecum Day 0 Rank Abundances")
+cecum_d0_ggplot
 ```
 
 # Generating Stacked Dot Plots of Number of Otus per Sample per Day
@@ -94,4 +95,5 @@ Just like the previous ggplot generating function, use it *immediately* after fi
 
 ```r
 cecum_d0_otu_count_ggplot <- GGPlotNumOtuGen(cecum_d0_otu_count, "OTU Count for Cecum Day 0")
+cecum_d0_otu_count_ggplot
 ```

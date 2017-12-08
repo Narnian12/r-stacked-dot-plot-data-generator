@@ -1,6 +1,6 @@
 # REQUIRES: The following variables - 
 	# num_otus_vec_in which is the result of SDPDataGen()
-	# ggtitle_in which is what you want the ggplot title to be (must be within quotations, eg "Cecum GGPlot Analysis for Day 0")
+	# ggtitle_in which is what you want the ggplot title to be (must be within quotations, eg "Stacked Dot Plot of Number of OTUs per Day in Cecum")
 # MODIFIES: None
 # EFFECTS: Returns ggplot of stacked dot plots for number of OTUs per sample per day (based on result of SDPDataGen())
 GGPlotGen <- function(num_otus_vec_in, ggtitle_in) {

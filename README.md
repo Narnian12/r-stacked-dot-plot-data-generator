@@ -3,6 +3,8 @@ Contains functions used to reformat MiSeq SOP data into a version usable for ggp
 
 All of the code here requires that your data goes through the MiSeq SOP pipeline (https://www.mothur.org/wiki/MiSeq_SOP).
 
+Previous steps in getting here, along with guidelines on how to analyze data after MiSeq SOP can be found here (https://narnian12.gitbooks.io/r-analysis-of-miseq-sop-processed-data/content/).
+
 # Generating Stacked Dot Plots for Organs by Day
 
 ## SDPDataGen() Function
